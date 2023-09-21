@@ -10,6 +10,7 @@ Check our [Harbour contracts](https://github.com/stakewise/contracts/tree/harbou
 We also support GNO staking. Check [contracts for gnosis chain](https://github.com/stakewise/contracts/tree/gnosis-chain).
 
 # Audits and bug bounty
+
 All audit reports are presented in the [audits folder](https://github.com/stakewise/contracts/tree/master/audits)
 
 Feel free to join our [bug bounty program](https://immunefi.com/bounty/stakewise/)
@@ -20,17 +21,21 @@ You can find the documentation for every contract in the `contracts` directory. 
 The documentation is also available on the [official documentation page](https://docs.stakewise.io/smart-contracts).
 
 #### Pool
-The Pool contract is an entry point for deposits into the StakeWise Pool. This contract stores ETH collected from the users before it is sent to the ETH2 Validator Registration Contract. 
+
+The Pool contract is an entry point for deposits into the StakeWise Pool. This contract stores ETH collected from the users before it is sent to the ETH2 Validator Registration Contract.
 
 #### StakedEthToken
-The StakedEthToken is an ERC-20 contract. It reflects the deposits made by the stakers in the form of sETH2 tokens. The tokens are mapped 1 to 1 to ETH. 
-The total supply of sETH2 is the sum of all the StakeWise Pool's validators' effective balances, plus an additional amount of up to (32 ETH - 1 Wei) ETH awaiting inclusion into a new validator. 
+
+The StakedEthToken is an ERC-20 contract. It reflects the deposits made by the stakers in the form of sETH2 tokens. The tokens are mapped 1 to 1 to ETH.
+The total supply of sETH2 is the sum of all the StakeWise Pool's validators' effective balances, plus an additional amount of up to (32 ETH - 1 Wei) ETH awaiting inclusion into a new validator.
 
 #### RewardEthToken
-The RewardEthToken is an ERC-20 contract. It reflects the rewards accumulated by the stakers in the form of rETH2 tokens. The tokens are mapped 1 to 1 to ETH. 
-The total supply of rETH2 is the amount that is above the effective balance of all the validators registered for the StakeWise Pool. 
+
+The RewardEthToken is an ERC-20 contract. It reflects the rewards accumulated by the stakers in the form of rETH2 tokens. The tokens are mapped 1 to 1 to ETH.
+The total supply of rETH2 is the amount that is above the effective balance of all the validators registered for the StakeWise Pool.
 
 #### Oracle
+
 Oracles contract stores accounts responsible for submitting or updating values based on the off-chain data.
 
 ## Deployments
@@ -53,7 +58,7 @@ Oracles contract stores accounts responsible for submitting or updating values b
 - Contract Checker: [0x85ee326f839Bc430655A3fad447837072ef52C2F](https://etherscan.io/address/0xfc1fc7257aea7c7c08a498594dca97ce5a72fdcb)
 - Proxy Admin: [0x3EB0175dcD67d3AB139aA03165e24AA2188A4C22](https://etherscan.io/address/0x3EB0175dcD67d3AB139aA03165e24AA2188A4C22)
 
-Check more details and previous versions at https://github.com/stakewise/contracts/blob/master/networks/mainnet.md 
+Check more details and previous versions at <https://github.com/stakewise/contracts/blob/master/networks/mainnet.md>
 
 ### Goerli testnet
 
@@ -72,7 +77,7 @@ Check more details and previous versions at https://github.com/stakewise/contrac
 - Contract Checker: [0x85ee326f839Bc430655A3fad447837072ef52C2F](https://goerli.etherscan.io/address/0x85ee326f839Bc430655A3fad447837072ef52C2F)
 - Proxy Admin: [0xbba3f4dDD4F705aD2028ee2da64fF3166bDe8cA8](https://goerli.etherscan.io/address/0xbba3f4dDD4F705aD2028ee2da64fF3166bDe8cA8)
 
-Check more details and previous versions at https://github.com/stakewise/contracts/blob/master/networks/goerli.md 
+Check more details and previous versions at <https://github.com/stakewise/contracts/blob/master/networks/goerli.md>
 
 ## Development
 
@@ -92,7 +97,7 @@ Check more details and previous versions at https://github.com/stakewise/contrac
 
 3. Update network parameters in `hardhat.config.js`. Learn more at [Hardhat config options](https://hardhat.org/config/).
 
-4. Change [settings](./deployments/settings.js) if needed. 
+4. Change [settings](./deployments/settings.js) if needed.
 
 5. Deploy StakeWise contracts to the selected network:
 
@@ -104,12 +109,11 @@ Check more details and previous versions at https://github.com/stakewise/contrac
 
 Development of the project happens in the open on GitHub, and we are grateful to the community for contributing bug fixes and improvements.
 
-
 ## Contact us
 
-- [Discord](https://chat.stakewise.io/) 
-- [Telegram](https://t.me/stakewise_io) 
-- [Twitter](https://twitter.com/stakewise_io) 
+- [Discord](https://chat.stakewise.io/)
+- [Telegram](https://t.me/stakewise_io)
+- [Twitter](https://twitter.com/stakewise_io)
 
 ### License
 
